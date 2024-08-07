@@ -1,4 +1,8 @@
-import Image from "next/image";
+export async function generateMetadata() {
+  return {
+    title: "Education | Jonathan van Wersch",
+  };
+}
 
 export default function Education() {
   return (

@@ -25,7 +25,7 @@ export default function Home() {
         my passion, however, lies in software. Programming gives me the ability
         to bring my ideas to life. I find it to be a far more exciting field
         than mechanical engineering, which often moves more slowly.
-        <br /> <br />I am currently working as a software engineer at
+        <br /> <br />I am currently working as a senior software engineer at
         Improbable, which creates new ways to connect, play, create and build
         value across interconnected virtual worlds. Outside of work, I love
         exercising and staying healthy — I am an avid runner and sports player.

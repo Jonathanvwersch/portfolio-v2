@@ -1,7 +1,11 @@
-"use client";
-
 import { ProjectAndLearningCard } from "@/components/project-and-learning-card";
-import { useState } from "react";
+import Link from "next/link";
+
+export async function generateMetadata() {
+  return {
+    title: "Projects | Jonathan van Wersch",
+  };
+}
 
 const projects: React.ComponentProps<typeof ProjectAndLearningCard>[] = [
   {
@@ -133,10 +137,12 @@ const learnings: React.ComponentProps<typeof ProjectAndLearningCard>[] = [
   },
 ];
 
-export default function ProjectsAndLearnings() {
-  const [activeTab, setActiveTab] = useState<"projects" | "learnings">(
-    "projects"
-  );
+export default function ProjectsAndLearnings({
+  searchParams,
+}: {
+  searchParams: { tab?: string };
+}) {
+  const activeTab = searchParams.tab || "projects";
 
   return (
     <>
@@ -149,28 +155,28 @@ export default function ProjectsAndLearnings() {
       </p>
 
       <div className="mb-8 flex space-x-2">
-        <button
+        <Link
+          href="/projects?tab=projects"
           className={`px-4 py-2 rounded-full text-sm transition-colors duration-200 ease-in-out
             ${
               activeTab === "projects"
                 ? "bg-gray-800 text-white"
                 : "bg-gray-200 text-gray-800 hover:bg-gray-300"
             }`}
-          onClick={() => setActiveTab("projects")}
         >
           PROJECTS
-        </button>
-        <button
+        </Link>
+        <Link
+          href="/projects?tab=learnings"
           className={`px-4 py-2 rounded-full text-sm transition-colors duration-200 ease-in-out
             ${
               activeTab === "learnings"
                 ? "bg-gray-800 text-white"
                 : "bg-gray-200 text-gray-800 hover:bg-gray-300"
             }`}
-          onClick={() => setActiveTab("learnings")}
         >
           LEARNINGS
-        </button>
+        </Link>
       </div>
 
       {activeTab === "projects" && (

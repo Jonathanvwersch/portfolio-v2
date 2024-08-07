@@ -2,7 +2,12 @@ import { Backend } from "@/assets/icons/backend";
 import { Code } from "@/assets/icons/code";
 import { Frontend } from "@/assets/icons/frontend";
 import { Infrastructure } from "@/assets/icons/infrastructure";
-import Image from "next/image";
+
+export async function generateMetadata() {
+  return {
+    title: "Skills | Jonathan van Wersch",
+  };
+}
 
 export default function Skills() {
   return (

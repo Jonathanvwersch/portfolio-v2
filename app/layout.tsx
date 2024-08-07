@@ -8,6 +8,7 @@ const robotoSlab = Roboto_Slab({ subsets: ["latin"] });
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  title: "Jonathan van Wersch",
   manifest: "favicons/site.webmanifest",
   icons: {
     icon: [

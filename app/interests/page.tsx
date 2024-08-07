@@ -1,5 +1,11 @@
 import Image from "next/image";
 
+export async function generateMetadata() {
+  return {
+    title: "Interests | Jonathan van Wersch",
+  };
+}
+
 export default function Work() {
   return (
     <>
