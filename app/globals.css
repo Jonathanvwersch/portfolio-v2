@@ -18,16 +18,15 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #120f10;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+h1 {
+  @apply font-robotoSlab text-2xl sm:text-3xl md:text-4xl;
 }
