@@ -3,6 +3,9 @@ import BlogPost from "@/components/blog-post";
 
 export default function Post({ params }: { params: { slug: string } }) {
   const post = getPostData(params.slug);
+  if (!post) {
+    return <h1>Post not found</h1>;
+  }
   return <BlogPost post={post} />;
 }
 
