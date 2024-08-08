@@ -33,10 +33,21 @@ const projects: React.ComponentProps<typeof ProjectAndLearningCard>[] = [
       "https://github.com/Jonathanvwersch/frontend-monorepo-boilerplate",
   },
   {
+    title: "Lodestar Landing Page",
+    date: "June 2024",
+    leadingLine: "A landing page for Lodestar, a space robotics company",
+    bulletPoints: [
+      "The UK is greatly lacking in interesting non-software engineering companies so when my friend raised $2.5 million to build a space robotics company and asked me to build a landing page, I duly obliged",
+      "I designed the landing page using Figma and built it using Framer, a no-code website builder",
+    ],
+    skills: ["Framer", "Figma"],
+    linkProject: "https://lodestar.space",
+  },
+  {
     title: "VeriTweet",
     date: "June 2024",
     leadingLine:
-      "A tool which uses the Perplexity API that allows for you to fact check tweets",
+      "A Chrome extension that allows for you to fact check tweets, by using the Perplexity AI API",
     bulletPoints: [
       "Built a simple chrome extensions that injects a button next to a tweet that allows you to fact check the tweet",
       "Found that it worked reasonably well but would need full control of the API to get it to work well",
