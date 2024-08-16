@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ProfilePhoto from "../public/images/profile-photo.webp";
 
 export default function Home() {
   return (
@@ -12,11 +13,13 @@ export default function Home() {
       </p>
       <div className="flex items-center mb-4">
         <Image
-          src="/images/profile-photo.webp"
+          src={ProfilePhoto}
           alt="Profile picture Jonathan van Wersch"
           width={300}
           height={600}
+          priority
           className="rounded-lg mr-4"
+          placeholder="blur"
         />
       </div>
       <p className="mb-4">

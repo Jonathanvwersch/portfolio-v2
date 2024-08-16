@@ -13,7 +13,7 @@ const navItems = [
   { href: "/projects", label: "Projects" },
   {
     target: "_blank",
-    href: "https://drive.google.com/file/d/1NPVZ-V0QfFBjnu-RT58xl97xXVcmkiHw/view",
+    href: "/resume",
     label: "Resume",
   },
 ];
