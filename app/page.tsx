@@ -11,15 +11,14 @@ export default function Home() {
         is from Egypt. Growing up I moved around a lot, living in five different
         countries by the time I finished school.
       </p>
-      <div className="flex items-center mb-4">
+      <div className="flex items-center mb-4 w-[300px] h-[225px]">
         <Image
           src={ProfilePhoto}
           alt="Profile picture Jonathan van Wersch"
           width={300}
-          height={600}
+          height={225}
           priority
           className="rounded-lg mr-4"
-          placeholder="blur"
         />
       </div>
       <p className="mb-4">

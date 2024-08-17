@@ -3,6 +3,7 @@
 import { Logo } from "@/assets/icons/logo";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { RESUME_LINK } from "@/constants/resume";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -13,7 +14,7 @@ const navItems = [
   { href: "/projects", label: "Projects" },
   {
     target: "_blank",
-    href: "/resume",
+    href: RESUME_LINK,
     label: "Resume",
   },
 ];
